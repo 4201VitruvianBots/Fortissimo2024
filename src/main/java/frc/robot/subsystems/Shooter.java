@@ -7,6 +7,14 @@ package frc.robot.subsystems;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Shooter extends SubsystemBase {
+  /*
+   * Notes on the offseason robot shooter:
+   * Shooter gear ratio is 1:1.6 (32 on the motor/20 on the shooter)
+   * Note spinning can be achieved by spinning one shooter motor faster than the other
+   * OP's shooter uses 8000 rpm on one motor and 4000 rpm on the other to induce spin, we'll do the same
+   * Phong basically just copied OP's robot lol
+   */
+  
   /** Creates a new Shooter. */
   public Shooter() {}
 

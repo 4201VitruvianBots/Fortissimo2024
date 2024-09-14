@@ -7,6 +7,13 @@ package frc.robot.subsystems;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Intake extends SubsystemBase {
+  /*
+   * Notes on the offseason robot intake:
+   * Intake has single Kraken X60 motor
+   * Under bumper intake
+   * Intake side = front
+   */
+  
   /** Creates a new Intake. */
   public Intake() {}
 

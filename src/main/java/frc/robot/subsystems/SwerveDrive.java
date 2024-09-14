@@ -7,6 +7,12 @@ package frc.robot.subsystems;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class SwerveDrive extends SubsystemBase {
+  /*
+   * Notes on offseason robot drivetrain:
+   * Swerve offsets should be basically the same as Forte
+   * Front side drive motors are flipped to not interfere with intake
+   */
+  
   /** Creates a new SwerveDrive. */
   public SwerveDrive() {}
 
