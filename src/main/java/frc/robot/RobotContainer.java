@@ -4,14 +4,13 @@
 
 package frc.robot;
 
-import frc.robot.constants.USB;
-//import frc.robot.commands.autos.*;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.WaitCommand;
 import edu.wpi.first.wpilibj2.command.button.CommandPS4Controller;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
-import edu.wpi.first.wpilibj2.command.button.Trigger;
+import frc.robot.constants.USB;
+
+// import frc.robot.commands.autos.*;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -21,18 +20,16 @@ import edu.wpi.first.wpilibj2.command.button.Trigger;
  */
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
-  
-  
-//   private final LoggedDashboardChooser<Command> m_autoChooser =
-//       new LoggedDashboardChooser<>("Auto Chooser");
+
+  //   private final LoggedDashboardChooser<Command> m_autoChooser =
+  //       new LoggedDashboardChooser<>("Auto Chooser");
 
   // Controller setup
   private final Joystick leftJoystick = new Joystick(USB.leftJoystick);
   private final Joystick rightJoystick = new Joystick(USB.rightJoystick);
   private final CommandXboxController driverController =
       new CommandXboxController(USB.xBoxController);
-  private final CommandPS4Controller testController =
-      new CommandPS4Controller(USB.testController);
+  private final CommandPS4Controller testController = new CommandPS4Controller(USB.testController);
 
   /** The container for the robot. Contains subsystems, OI devices, and commands. */
   public RobotContainer() {
@@ -41,12 +38,10 @@ public class RobotContainer {
   }
 
   // Use this method to define your trigger->command mappings.
-  private void configureBindings() {
-    
-  }
-  
+  private void configureBindings() {}
+
   private void initAutoChooser() {
-    //m_autoChooser.addDefaultOption("Do Nothing", new WaitCommand(0));
+    // m_autoChooser.addDefaultOption("Do Nothing", new WaitCommand(0));
   }
 
   /**

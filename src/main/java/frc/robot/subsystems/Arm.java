@@ -17,7 +17,7 @@ public class Arm extends SubsystemBase {
    * Arm has encoder (CANcoder most likely)
    * We'll be doing arm climbing with hooks on top of the arm
    */
-  
+
   /** Creates a new Arm. */
   public Arm() {}
 

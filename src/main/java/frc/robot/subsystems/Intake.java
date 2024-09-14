@@ -13,7 +13,7 @@ public class Intake extends SubsystemBase {
    * Under bumper intake
    * Intake side = front
    */
-  
+
   /** Creates a new Intake. */
   public Intake() {}
 

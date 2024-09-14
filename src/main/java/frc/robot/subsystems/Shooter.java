@@ -14,7 +14,7 @@ public class Shooter extends SubsystemBase {
    * OP's shooter uses 8000 rpm on one motor and 4000 rpm on the other to induce spin, we'll do the same
    * Phong basically just copied OP's robot lol
    */
-  
+
   /** Creates a new Shooter. */
   public Shooter() {}
 
