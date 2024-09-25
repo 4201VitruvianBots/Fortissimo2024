@@ -19,7 +19,6 @@ public final class SWERVE {
     //    public static double kTrackWidth = Units.inchesToMeters(26);
     //    public static final double kWheelBase = Units.inchesToMeters(24);
     // Track Width and WheelBase measured from swerve wheels instead of chassis
-    // TODO update this if needed
     public static double kTrackWidth = Units.inchesToMeters(21);
     public static final double kWheelBase = Units.inchesToMeters(19);
     public static final double kDriveBaseRadius =
@@ -41,8 +40,6 @@ public final class SWERVE {
             ModuleMap.orderedValues(kModuleTranslations, new Translation2d[0]));
 
     // In rotations
-    /* A lot of this stuff will need to change for offseason bot. So don't take it for granted */
-    // TODO change
     public static double kFrontLeftEncoderOffset = 0.219970703125;
     public static double kFrontRightEncoderOffset = 0.265380859375;
     public static double kBackLeftEncoderOffset = -0.046875;
@@ -74,7 +71,6 @@ public final class SWERVE {
   }
 
   public static class MODULE {
-    // TODO confirm
     public static final double kDriveMotorGearRatio = 6.12;
     public static final double kTurnMotorGearRatio = 150.0 / 7.0;
     public static final double kCoupleRatio = 3.5714285714285716;
@@ -105,7 +101,6 @@ public final class SWERVE {
         SwerveModule.ClosedLoopOutputType.Voltage;
   }
 
-  // TODO: Find new CAN values for pigeons and swerve modules
   public static final SwerveDrivetrainConstants DrivetrainConstants =
       new SwerveDrivetrainConstants().withPigeon2Id(CAN.pigeon).withCANbusName(CAN.driveBaseCanbus);
 
