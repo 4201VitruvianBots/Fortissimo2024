@@ -11,7 +11,6 @@ import frc.robot.subsystems.*;
 
 public class GetSubsystemStates extends Command {
   private final LEDSubsystem m_led;
-  private final Climber m_climber;
   private final Intake m_intake;
   private final Shooter m_shooter;
   private final Vision m_vision;
@@ -33,13 +32,11 @@ public class GetSubsystemStates extends Command {
   public GetSubsystemStates(
       LEDSubsystem led,
       Intake intake,
-      Climber climber,
       Shooter shooter,
       Vision vision,
       CommandSwerveDrivetrain swerveDrive) {
     m_led = led;
     m_intake = intake;
-    m_climber = climber;
     // m_arm = arm;
     m_SwerveDrivetrain = swerveDrive;
     m_shooter = shooter;
@@ -60,7 +57,6 @@ public class GetSubsystemStates extends Command {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    isClimbing = m_climber.getClimbState();
 
     isLocked = m_SwerveDrivetrain.isTrackingState();
 

@@ -26,7 +26,6 @@ public class SuperStructureVisualizer implements AutoCloseable {
   Shooter m_shooter;
   AmpShooter m_ampShooter;
   Arm m_arm;
-  Climber m_climber;
   Vision m_vision;
   LEDSubsystem m_led;
 
@@ -166,10 +165,6 @@ public class SuperStructureVisualizer implements AutoCloseable {
     m_arm = arm;
   }
 
-  public void registerClimber(Climber climber) {
-    m_climber = climber;
-  }
-
   public void registerVision(Vision vision) {
     m_vision = vision;
   }
@@ -230,15 +225,6 @@ public class SuperStructureVisualizer implements AutoCloseable {
       m_armVisualizer2.update(m_arm.getCurrentAngle() + 170, m_arm.getPercentOutput());
   }
 
-  public void updateClimber() {
-    m_climberVisualizer.update(
-        m_climber.getHeightMetersMotor1(), m_climber.getPercentOutputMotor1());
-
-    if (m_climberVisualizer2 != null)
-      m_climberVisualizer2.update(
-          m_climber.getHeightMetersMotor1(), m_climber.getPercentOutputMotor1());
-  }
-
   public void updateLimelights() {
     // updateLimelightColor(
     //     m_limelightA2d,
@@ -259,7 +245,6 @@ public class SuperStructureVisualizer implements AutoCloseable {
     if (m_shooter != null) updateShooter();
     if (m_ampShooter != null) updateAmpShooter();
     if (m_arm != null) updateArm();
-    if (m_climber != null) updateClimber();
     if (m_vision != null) updateLimelights();
     if (m_led != null) updateLED();
   }
